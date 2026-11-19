@@ -1,0 +1,21 @@
+{
+  "name": "ruizhang-skills",
+  "owner": {
+    "name": "村上春墅新媒体团队"
+  },
+  "metadata": {
+    "description": "村上春墅新媒体运营技能：热点、选题、脚本、分镜、字幕、合规",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "ruizhang-newmedia-skill",
+      "description": "村上春墅新媒体运营全流程：热点抓取与借势选题、短视频脚本、口播、分镜、SRT 字幕、标题封面话题、合规自检，适配抖音/视频号/小红书与创始人IP/招商/项目经理/销售等账号。",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/ruizhang-newmedia-skill"
+      ]
+    }
+  ]
+}
