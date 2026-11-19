@@ -1,0 +1,12 @@
+---
+description: 村上春墅新媒体内容创作
+alwaysApply: false
+---
+
+处理村上春墅的新媒体任务时：
+
+1. 读取 `skills/ruizhang-newmedia-skill/SKILL.md`，按其中的流程和输出模板执行。
+2. 按需读取 `skills/ruizhang-newmedia-skill/references/`。
+3. 品牌数字只能来自 `references/品牌知识.md`，不得编造。
+4. 缺信息时先查本地参考，再联网检索官方来源并标注链接与日期；检索不到就问用户。
+5. 交付前对照 `references/合规红线.md` 自检。

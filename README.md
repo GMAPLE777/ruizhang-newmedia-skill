@@ -203,6 +203,26 @@ C:\Users\你的用户名\.claude\skills\ruizhang-newmedia-skill\SKILL.md
 
 ---
 
+## 同事用其他 AI 工具怎么办
+
+不是所有人都用 Claude Code。这个 skill 也能接到其他工具上，只是方式不同：
+
+| 工具 | 怎么接 | 详细说明 |
+|---|---|---|
+| Codex / Cursor / Gemini CLI | 仓库自带 `AGENTS.md`、`GEMINI.md`、`.cursor/rules/`，打开仓库即可 | [docs/其他智能体使用.md](docs/其他智能体使用.md) |
+| Claude.ai | 上传 skill（套餐支持时），或建 Project + 知识库 | 同上 |
+| 豆包 / Kimi / 文心 / 通义 | 上传知识库 + 粘贴系统提示词 | [docs/通用提示词.md](docs/通用提示词.md) |
+| Coze / Dify | 知识库 + 工作流 + 系统提示词 | 同上 |
+
+**不管用哪种工具，都必须遵守同一条规则：**
+
+> 不编造数字、政策、案例、客户、奖项、价格、工期、审批结果。
+> 缺信息时先查资料，再联网检索官方来源；查不到就问用户，不要猜。
+
+这条规则已经写进 `SKILL.md`、`AGENTS.md`、`GEMINI.md` 和通用提示词里。
+
+---
+
 ## 六、第一次使用：从这三句话开始
 
 安装好后，直接复制下面任意一句发给 Claude。
@@ -496,17 +516,24 @@ Claude Code 主要在电脑上使用。手机端 Claude App 是否支持自定�
 ruizhang-newmedia-skill/
 ├── README.md
 ├── LICENSE
+├── AGENTS.md                     # Codex/Cursor 等入口
+├── GEMINI.md                     # Gemini CLI 入口
+├── CHANGELOG.md
 ├── .claude-plugin/
 │   └── marketplace.json          # 插件市场清单
+├── .cursor/rules/
+│   └── ruizhang-newmedia.mdc     # Cursor 规则
 ├── skills/
 │   └── ruizhang-newmedia-skill/
 │       ├── SKILL.md              # 技能主文件
-│       ├── references/           # 品牌知识、方法、合规、热点等
+│       ├── references/           # 品牌知识、方法、合规、热点、事实核验
 │       ├── scripts/
 │       │   └── fetch_hot.py      # 热点抓取
 │       └── assets/               # 品牌手册图片
 └── docs/
-    └── 维护指南.md
+    ├── 维护指南.md
+    ├── 其他智能体使用.md
+    └── 通用提示词.md
 ```
 
 ### 更新内容
